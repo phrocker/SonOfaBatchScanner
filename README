@@ -1,0 +1,5 @@
+SonOfABatchScanner
+uses a source and sink for the publishing of results, such that ordering is maintained across multiple scan tasks. 
+this can be useful if using a tertiary store ( which is also a source/sink -- i.e. voldemort, mysql ). 
+
+I'll create a voldemort example soon and upload the POM I'm using locally. 
