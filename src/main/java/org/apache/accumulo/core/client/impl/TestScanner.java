@@ -1,5 +1,7 @@
 package org.apache.accumulo.core.client.impl;
 
+import static org.junit.Assert.*;
+
 import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.Iterator;
@@ -37,7 +39,8 @@ public class TestScanner {
 		ZooKeeperInstance instance = new ZooKeeperInstance("accumulo", "localhost:2181");
 		Connector connector = instance.getConnector("root", "secret".getBytes());
 		
-		//connector.tableOperations().create("test");
+		if (!connector.tableOperations().exists("test"))
+			connector.tableOperations().create("test");
 		
 		BatchWriter writer = connector.createBatchWriter("test", 128L*1024L*1024L,10000L,11);
 		
@@ -59,7 +62,6 @@ public class TestScanner {
 		
 		
 		ItelliScanner scanner = new ItelliScanner(instance,new AuthInfo("root",buff,instance.getInstanceID()),"test",connector.securityOperations().getUserAuthorizations("root"),5,ResultReceiver.class,memStore,memStore);
-		//BatchScanner scanner = connector.createBatchScanner("test", connector.securityOperations().getUserAuthorizations("root"),5 );
 		
 		scanner.setRanges(Collections.singleton(new Range()));
 		
@@ -70,7 +72,7 @@ public class TestScanner {
 		while(iter.hasNext())
 		{
 			Entry<Key,Value> kv= iter.next();
-			System.out.println(kv.getKey().getRow());
+			new Long(kv.getKey().getRow().toString());
 		}
 	}
 
