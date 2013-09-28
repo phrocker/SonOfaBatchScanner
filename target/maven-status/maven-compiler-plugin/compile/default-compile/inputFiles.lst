@@ -1,0 +1,11 @@
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/impl/ResultReceiver.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/impl/ScanTask.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/impl/MemoryStore.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/impl/KeyValue.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/Source.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/ResultReceiverIfc.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/impl/SonOfaBatchIterator.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/Sink.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/TableUtils.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/impl/ItelliScanner.java
+/home/marc/fun/SonOfaBatchScanner/src/main/java/org/apache/accumulo/core/client/ItelliProcessor.java

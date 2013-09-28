@@ -1,0 +1,12 @@
+org/apache/accumulo/core/client/Sink.class
+org/apache/accumulo/core/client/impl/ResultReceiver.class
+org/apache/accumulo/core/client/impl/KeyValue.class
+org/apache/accumulo/core/client/impl/SonOfaBatchIterator.class
+org/apache/accumulo/core/client/impl/MemoryStore.class
+org/apache/accumulo/core/client/impl/ItelliScanner.class
+org/apache/accumulo/core/client/ItelliProcessor.class
+org/apache/accumulo/core/client/impl/ScanTask.class
+org/apache/accumulo/core/client/ResultReceiverIfc.class
+org/apache/accumulo/core/client/impl/ItelliScanner$BatchReaderThreadFactory.class
+org/apache/accumulo/core/client/Source.class
+org/apache/accumulo/core/client/TableUtils.class
